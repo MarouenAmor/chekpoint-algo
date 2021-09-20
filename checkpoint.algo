@@ -1,15 +1,17 @@
 ALGORITHM sentence
 VAR
 i,nc,nw,nv: INTEGER;
-ch : STRING := "go my code algo checkpoint work.";
+ch : STRING;
 BEGIN
 
 i:=0;
 nv:=0;
 nw:=1;
 nc:=1;
+write ("donner une chaine");
+read(ch);
     WHILE (ch[i]<>".") DO
-       IF (ch[i] in ["a","e","i","u","y","o"]) THEN
+       IF ((ch[i]=="a") or (ch[i]=="e") or (ch[i]=="i") or (ch[i]=="u") or (ch[i]=="y") or (ch[i]=="o")) THEN
            nv:=nv+1;
        END_IF 
        IF (ch[i]==" ") THEN
